@@ -1,4 +1,4 @@
-# Group YY - {Short snappy Title of your project}
+# Group 42 - {Emission Impossible}
 
 - Your title can change over time.
 
@@ -8,7 +8,9 @@ Details for Milestone are available on Canvas (left sidebar, Course Project).
 
 ## Describe your topic/interest in about 150-200 words
 
-{Add your stuff here}
+Looking at the Gross Domestic Product (GDP) and amount of emmisions (with taking population in mind), our topic essentially is a curiosity around the climate crises.
+We are interested in finding the relationship between GDP per capita and their relations to emmsions. From 1960's to 2016, we noticed a big change in climate overtime, yet increasing drastically over recent times. We are interested in finding out which country is impacted the most negatively by global emmisions. From previous research, the countries producing the least amount of emmisions are currently suffering the most from the climate crises. We are interested in determining why, what the correlation is, and how the statistics have changed over roughly 60 years.
+
 
 ## Describe your dataset in about 150-200 words
 
@@ -16,9 +18,9 @@ Details for Milestone are available on Canvas (left sidebar, Course Project).
 
 ## Team Members
 
-- Person 1: one sentence about you!
-- Person 2: one sentence about you!
-- Person 3: one sentence about you!
+- Rona Habibi: I am generally a very happy person, and I'm patient.
+- Person 2: Njabulo Dlamini: I am generally impatient.
+- Person 3: Aidan Elliott: I am somewhat patient
 
 ## Images
 
