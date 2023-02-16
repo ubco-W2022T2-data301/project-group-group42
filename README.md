@@ -14,11 +14,11 @@ We are interested in finding the relationship between GDP per capita and their r
 
 ## Describe your dataset in about 150-200 words
 
-{Add your stuff here}
+Our main dataset that we will be using is the carbon dioxide and greenhouse gas emissions provided by the Our World in Data organisation which is a registered charity in England and Wales. This data presents the global emissions produced from as early as the 1850's however, for this project we will be focusing on the 1960's to 2021 (roughly). This particular dataset was produced for education and we have the permission to use it as per the open license stated on the website. As to how this data was collected, with no doubt there was a large team involved to gather all this data, yet we only could only research the authors: Hannah Ritchie and Max Roser as the contributers who put this together. We will use this dataset along with other open licensed datasets involving rising: temperatures, natural disastors and gross domestic product, to fully understand the contribution and relationship each one has to the rising emission rates.
 
 ## Team Members
 
-- Rona Habibi: I am generally a very happy person, and I'm patient.
+- Person 1: Rona Habibi: I am generally a very happy person, and I'm patient.
 - Person 2: Njabulo Dlamini: I am generally impatient.
 - Person 3: Aidan Elliott: I am somewhat patient
 
