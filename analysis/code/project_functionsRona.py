@@ -10,7 +10,7 @@ import seaborn as sns
 def processed_nd_data():
     dfclean = (pd.read_csv("../data/raw/1900_2021_DISASTERS.csv")
            .query('`Disaster Type` in ["Flood", "Storm", "Drought", "Wildfire", "Landslide"]')
-           .iloc[:, [2, 6, 7, 11, 13, 14]]
+           .iloc[:, [1, 5, 6, 10, 12, 13]]
            .dropna()
           )
     return dfclean 
@@ -39,7 +39,7 @@ def num_nd_yearly():
 #The following will be for the Emissions Data:
 
 def processed_emi_data():
-     data_em = (pd.read_csv("../data/raw/owid_emissions.csv")
+    data_em = (pd.read_csv("../data/raw/owid_emissions.csv")
                 .query('year >= 1970')
                 .iloc[:, [0, 1, 3, 7, 9]]
                 .dropna()
