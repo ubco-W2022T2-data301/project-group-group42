@@ -1,6 +1,6 @@
 #load import statements
 import pandas as pd
-import matplotlib.plyplot as plt
+import matplotlib.pyplot as plt
 import seaborn as sns
 
 
@@ -17,24 +17,23 @@ def processed_nd_data():
 
 # These next two are rather similar; they will display the number of natural disasters per year including both the number and percentage of increase or decrease in events. This first one groups the data by Continent where the second one does not 
 
-def num_nd_continent():
-    df_ndperyear = (dfclean.groupby(['Year', 'Continent', 'Disaster Type'])
-                .size()
-                .reset_index(name='Number of Disasters')
-                .assign(Difference_from_Previous_Year=lambda x: x.groupby('Disaster Type')['Number of Disasters'].diff(),
-                        Percent_Difference_from_Previous_Year=lambda x: (x['Difference_from_Previous_Year'] / x.groupby('Disaster Type')['Number of Disasters'].shift(1)) * 100)
-               )
+def processed_nd_data():
+    df_ndperyear = (pd.read_csv("../data/raw/1900_2021_DISASTERS.csv")
+                      .query('`Disaster Type` in ["Flood", "Storm", "Drought", "Wildfire", "Landslide"]')
+                      .iloc[:, [1, 5, 6, 10, 12, 13]]
+                      .dropna()
+                      .groupby(['Year', 'Continent', 'Disaster Type'])
+                      .size()
+                      .reset_index(name='Number of Disasters')
+                      .assign(Difference_from_Previous_Year=lambda x: x.groupby('Disaster Type')['Number of Disasters'].diff(),
+                              Percent_Difference_from_Previous_Year=lambda x: (x['Difference_from_Previous_Year'] / x.groupby('Disaster Type')['Number of Disasters'].shift(1)) * 100)
+                    )
     return df_ndperyear
+processed_nd_data()
+              
+  
 
 
-def num_nd_yearly():
-    df_ndperyear = (dfclean.groupby(['Year', 'Disaster Type'])
-                .size()
-                .reset_index(name='Number of Disasters')
-                .assign(Difference_from_Previous_Year=lambda x: x.groupby('Disaster Type')['Number of Disasters'].diff(),
-                        Percent_Difference_from_Previous_Year=lambda x: (x['Difference_from_Previous_Year'] / x.groupby('Disaster Type')['Number of Disasters'].shift(1)) * 100)
-                   )
-    return df_ndperyear
 
 #The following will be for the Emissions Data:
 
@@ -47,8 +46,23 @@ def processed_emi_data():
     return df_em      
              
              
-             
-             
+
+
+def processed_nd_data():
+    df_ndperyear = (pd.read_csv("../data/raw/1900_2021_DISASTERS.csv")
+                      .query('`Disaster Type` in ["Flood", "Storm", "Drought", "Wildfire", "Landslide"]')
+                      .iloc[:, [1, 5, 6, 10, 12, 13]]
+                      .dropna()
+                      .groupby(['Year', 'Continent', 'Disaster Type'])
+                      .size()
+                      .reset_index(name='Number of Disasters')
+                      .assign(Difference_from_Previous_Year=lambda x: x.groupby('Disaster Type')['Number of Disasters'].diff(),
+                              Percent_Difference_from_Previous_Year=lambda x: (x['Difference_from_Previous_Year'] / x.groupby('Disaster Type')['Number of Disasters'].shift(1)) * 100)
+                    )
+    return df_ndperyear
+processed_nd_data()
+
+
              
              
              
