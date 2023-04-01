@@ -30,3 +30,8 @@ def process_temp_dataset():
     pivoted_df["delta_temp"] = pivoted_df.iloc[:,53] - pivoted_df.iloc[:,0] #Calculates change in temperature from 1960 to 2013
     
     return temp_df, pivoted_df
+
+
+
+def load_and_process():
+    
