@@ -8,7 +8,7 @@ import pycountry_convert as pc
 # Here is the cleaned dataset for Natural Disasters from 1970-2021:
 
 def processed_nd_data():
-    df_ndperyear = (pd.read_csv("../../data/raw/1900_2021_DISASTERS.csv")
+    df_ndperyear = (pd.read_csv("../data/raw/1900_2021_DISASTERS.csv")
                       .query('`Disaster Type` in ["Flood", "Storm", "Drought", "Wildfire", "Landslide"]')
                       .iloc[:, [1, 5, 6, 10, 12, 13]]
                       .dropna()
@@ -41,16 +41,16 @@ def get_continent(country):
     
     # cleaned and processed emission dataset
 def preprocess_emissions_data():
-    df_em = (pd.read_csv("../../data/raw/owid_emissions.csv")
-                     .drop(df_emis[df_emis["year"] < 1970].index)
-                     .iloc[:, [0, 1, 3, 7, 9]]
-                     .sort_values(by='year')
-                     .assign(continent=lambda x: x["country"].apply(get_continent)) #this function was created just above ^
-                     .query('continent != "Unknown"')
-                     .dropna()
-                     .rename(columns={'co2_growth_prct': 'co2 growth % '}))
-    
-    return df_em
+    df_emis = pd.read_csv("../data/raw/owid_emissions.csv")
+    df_emis = (df_emis.drop(df_emis[df_emis["year"] < 1970].index)
+              .iloc[:, [0, 1, 3, 7, 9]]
+              .sort_values(by='year')
+              .assign(continent=lambda x: x["country"].apply(get_continent)) #this function was created just above ^
+              .query('continent != "Unknown"')
+              .dropna()
+              .rename(columns={'co2_growth_prct': '% Difference from Previous Year'}))
+    return df_emis
+preprocess_emissions_data()
 
 
 
@@ -61,8 +61,8 @@ def preprocess_temperature_data():
         'South America': 'Americas'
     }
 
-    df_temps = (pd.read_csv("../../data/processed/processedTemperatureData.csv")
-                   .drop(df_temp[df_temp["year"] < 1970].index)
+    df_temp = pd.read_csv("../data/processed/processedTemperatureData.csv")
+    df_temp = (df_temp.drop(df_temp[df_temp["year"] < 1970].index)
                    .assign(Continent=lambda x: x["Country"].apply(get_continent)
                            .replace(americas_cont))  # Include mapping and replacement step
                    .query('Continent != "Unknown"')
@@ -72,9 +72,10 @@ def preprocess_temperature_data():
                            pct_temperature_difference=lambda x: x['temperature_difference'] /
                            x['AverageTemperature'] * 100 )
                    .dropna()
+                   .rename(columns={'year':'Year'})
                    .rename(columns={'pct_temperature_difference': '% temp difference'}))
                
-    return df_temps
+    return df_temp
 preprocess_temperature_data()
 
 
