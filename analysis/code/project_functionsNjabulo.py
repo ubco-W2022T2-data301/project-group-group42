@@ -45,3 +45,13 @@ def country_emis():
               .reset_index(drop=True))
 
     return mydf
+
+def country_emissions():
+   
+    emissions = (pd.read_csv("../data/raw/owid_emissions.csv")
+              .query('year >= 1980')
+              .iloc[:, [0, 1, 3, 4, 7, 9]]
+              .reset_index(drop=True)
+              .assign(Emissions_per_capita=lambda x: x['co2'] * 1000000 / x['population'])
+              .reset_index(drop=True))
+    return emissions
