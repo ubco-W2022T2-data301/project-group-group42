@@ -24,15 +24,18 @@ This exploratory data analysis did not provide any evidence that a country's CO2
 Rona's Research Question:
 
 Wanting to take the climate crisis more seriously, this research question puts a focus point on natural disasters. To determine if there is a distinct relationship between natural disasters, carbon dioxide emission rates and average temperatures across continents; and can we assume that the natural disasters are induced by the climate crisis?  The research behind this question invlolved aggregating my data and manipulating it in ways that would allow me to compare the rates of global natural disterster with both global emission rates and global average temperatures. Originally this report only included the data sets of naturals disasters to be compared to the emissions data set however, after receiving a suggestion to also include temperatures by our teaching assistant, I have implemented it into my research. By cleaning, wrangling, and processing the raw data sets, I have created a processed version along with all of my analysis, which can be found [here](analysis/analysisRona.ipynb). The findings of my research includes sorting through the data by continents; Africa, Asia, Oceania, Europe, and the Americas (wich include both North and South America), and focusing on the year 1970 and onwards.
-Plot A)  ![image of the difference of natural disasters over the years](images/diffND_rona.png)
+Plot A) 
+![image of the difference of natural disasters over the years](images/diffND_rona.png "Plot A")
 
 This is a scatterplot which demonstrates the difference of natural disasters comparing the the previous year. In green, we can easily see that Europe has had consistently decreasing disasters in comparison to the previous year. By seeing this on the left, we can have an idea of where to look for europe in terms of average temperatures and carbon dioxide emissions. In contrast, on the right side we see Africa, Asia, and America quite sparsed out. This is key to remember because with their number of natural disasters increasing over the years, we would want to look at the other data to see if there is a positive relationship.
 
-Plot B) ![image of two, side-by-side plots of emissions and natural disasters](images/ndVSem_rona.png)
+Plot B) 
+![image of two, side-by-side plots of emissions and natural disasters](images/ndVSem_rona.png "Plot B")
 
 Here, we have created a side by side plot displaying the increase of emissions over the years on the left, and the increase in natural disasters grouped by types on the right. In the scatterplot (Plot A), it was noted that the continents Asia, America and Africa have seen an increase in natural disasters; now to look over at Plot B), we can see similar trends of increase in natural disasters by its’ type, and the increase of global carbon dioxide emissions. In this plot, taking a closer look at Asia, which is the dark blue line on the left and orage on the right, we see that they are the peak for both plots. And if we look more carefully, floods and wildfires have been the natural disaster types increasing in asia as their emission rates have been. This relationship shows a consistent growth rate with both emission and natural disasters.
 
-Plot C) [](images/ndVStemp_rona.png) 
+Plot C)
+![image of 2 side-byside plot of temperatures and natural disasters](images/ndVStemp_rona.png "Plot C") 
 
 Here in plot C) we are looking at the percentage difference of natural disasters compared to its previous year, along with average temperatures compared to its’ previous year. Just by looking at the variability of the plots here, lets first not Africa. Althought the temperature data set does not go all the way through to the present time like the others, our focus is still going to be on 1970 and onwards. Africas average temperatures have varied throughout the years, with the exception of cold years, and hot years, we can still make the assumption that their temperatures are unstable which could be a result of the climate crisis. Nonetheless, if we compare to the plot of the right, the natural disasters plot, we can still see how they have showed anthe greatest increase in floods and next storms. 
 
