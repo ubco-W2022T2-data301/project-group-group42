@@ -14,11 +14,11 @@ While no clear pattern was easily drawn, some clusters of larger change could be
 
 ![](images/Ridgeline_Aidan.PNG "RidgeLine plot displaying the distribution of change in temperature grouped by continent")
 
-	To finally answer the research question definitively, a scatterplot of change in temperature and total CO2 emissions was made where each country was a dot. Since some countries have magnitudes smaller population and landmass, a log scale was used for CO2 emissions. The resulting plot looked just about like random dots. Calculating the correlation between the two variables gave a slight positive relationship although some statistical calculations showed that it was not enough to provide statistically significant evidence of a relationship.
+To finally answer the research question definitively, a scatterplot of change in temperature and total CO2 emissions was made where each country was a dot. Since some countries have magnitudes smaller population and landmass, a log scale was used for CO2 emissions. The resulting plot looked just about like random dots. Calculating the correlation between the two variables gave a slight positive relationship although some statistical calculations showed that it was not enough to provide statistically significant evidence of a relationship.
 
 ![](images/ScatterPlot_Aidan.PNG "Scatterplot showing the relationship between a country's change in temperature and total CO2 emissions")
 
-	This exploratory data analysis did not provide any evidence that a country's CO2 output is directly tied to their change in temperature. This means that climate change is a problem that must be solved as a global civilization, and one country’s reduction in their carbon footprint will not provide results without the whole world following suit.
+This exploratory data analysis did not provide any evidence that a country's CO2 output is directly tied to their change in temperature. This means that climate change is a problem that must be solved as a global civilization, and one country’s reduction in their carbon footprint will not provide results without the whole world following suit.
 
 
 Rona's Research Question:
