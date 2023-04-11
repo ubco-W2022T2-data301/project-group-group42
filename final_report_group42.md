@@ -37,7 +37,7 @@ A quadrant plot was made with GDP and Emissions per capita being the two variabl
 
 The plot shows that majority of countries follows an expected relationship with majority of the countries either residing in groups I or III. However, it was decided that for a country to be both economically and environmentally prosperous it would need to have a GDP per capita greater than $20,000 per capita and an Emissions per capita less than 12 metric tons per capita. Thus, the focus of analysis would centre around Group IV.
 
-![](images/bar_plot.png "Bar plot displaying the top 16 countries in terms of change in GDP per capita from 1980-2023")
+![](images/Bar_plot.png "Bar plot displaying the top 16 countries in terms of change in GDP per capita from 1980-2023")
 
 A bar chart was then created that had the top sixteen countries in terms of change in GDP per capita since 1980 with countries such as Luxembourg, Ireland and Singapore ranking in the top three of those countries. From then on the search was then further filtered to find which of these 16 countries have consistently had the lowest emissions per capita which were Iceland, Ireland and Canada.
 
