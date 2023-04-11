@@ -15,13 +15,13 @@ A quadrant plot was made with GDP and Emissions per capita being the two variabl
 - Group II: Countries with a relatively low gdp capita and a high emissions per capita.
 - Group III: Countries with a relatively high emissions per capita and a high gdp per capita.
 - Group IV: Countries with a relatively low emissions per capita and a high gdp per capita.
-![](ungraded/Quadrant_plot.png "Quadrant plot displaying the relationship between a country's GDP and Emissions per capita.")
+![](../images/Quadrant_plot.png "Quadrant plot displaying the relationship between a country's GDP and Emissions per capita.")
 
 The plot shows that majority of countries follows an expected relationship with majority of the countries either residing in groups I or III. However, it was decided that for a country to be both economically and environmentally prosperous it would need to have a GDP per capita greater than $20,000 per capita and an Emissions per capita less than 12 metric tons per capita. Thus, the focus of analysis would centre around Group IV.
 
-![](ungraded/bar_plot.png "Bar plot displaying the top 16 countries in terms of change in GDP per capita from 1980-2023")
+![](../images/bar_plot.png "Bar plot displaying the top 16 countries in terms of change in GDP per capita from 1980-2023")
 A bar chart was then created that had the top sixteen countries in terms of change in GDP per capita since 1980 with countries such as Luxembourg, Ireland and Singapore ranking in the top three of those countries. From then on the search was then further filtered to find which of these 16 countries have consistently had the lowest emissions per capita which were Iceland, Ireland and Canada.
-![](ungraded/Violin_plot.png)
+![](../images/Violin_plot.png)
+
 Based on the violin plot, of the three countries, Canada had a siginificantly larger emissions per capita and was thus disregarded when investigating the economies of the countries. Ireland is an Ireland nation of 5 million people. Despite being a developed nation is able to to thrive without being overly reliant on an industrial sector due to its hand in argiculture and tourism. Moreover, Iceland is an even smaller island nation of approximately 400,000 people. Interestingly, Iceland is in a position where their economic success is in large part due to its use of its natural resources. Iceland is the world's largest electricity provider per capita with 99% of its energy coming from its abundance of hydroelectric dams and geothermal power sources. Thus, suggesting that although circumstances such as population size and natural resources likely play a role in a country's ability to be both environmentally and economically prosperous, it is possible to achieve that balance and thus the onus is on the governments of countries to find a way to achieve this balance. 
 
-It is easy to be apathetic as we are fortunately live in a country that is yet to face the worst of what climate change has to offer, thus it is moWith the ever-present threat of climate change looming over society with its exhaustive list of negative effects on the planet
