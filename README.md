@@ -26,11 +26,15 @@ Our main dataset that we will be using is the carbon dioxide and greenhouse gas 
 
 {You should use this area to add a screenshot of an interesting plot, or of your dashboard}
 
-<img src ="images/test.png" width="100px">
+<img src ="dashboard/AidanDashboardPic.PNG" width="300px">
 
 ## References
 
-{Add your stuff here}
+[CO2 Emission Dataset](https://ourworldindata.org/co2-and-greenhouse-gas-emissions)\
+[Temperature Dataset](https://www.kaggle.com/datasets/vijayvvenkitesh/global-land-temperatures-by-country)\
+[GDP Dataset](https://www.imf.org/external/datamapper/NGDPDPC@WEO/OEMDC/ADVEC/WEOWORLD)\
+[Natural Disaster Dataset](https://www.kaggle.com/datasets/jnegrini/emdat19002021)\
+
 
 
 
